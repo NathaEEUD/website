@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "baseUrl": "./",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -13,7 +14,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@foundations": ["components/00_foundations/index.ts"],
+      "@atoms": ["components/01_atoms/index.ts"],
+      "@molecules": ["components/02_molecules/index.ts"],
+      "@organisms": ["components/03_organisms/index.ts"],
+      "@templates": ["components/04_templates/index.ts"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
