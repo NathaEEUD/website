@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <br />I have two 🐶 🐶 and I enjoy their unconditional love and company!
       </Text>
 
-      <Avatar name="Segun Adebayo" size="2xl" src="https://bit.ly/sage-adebayo" />
+      <Avatar name="Nathaly Riaño Bejarano" size="2xl" src="/ProfileNathaly.jpg" />
 
       <Text>
         I&apos;m an experienced developer, primarily with the JavaScript ecosystem, who found the
