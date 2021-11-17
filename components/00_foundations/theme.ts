@@ -12,24 +12,39 @@ const breakpoints = createBreakpoints({
   xl: '1200px',
 })
 
+const fonts = {
+  heading: 'Red Hat Display',
+  body: 'Source Sans Pro',
+}
+
+const styles = {
+  global: {
+    '*, *:before, *:after': {
+      boxSizing: 'border-box',
+    },
+    'html, body': {
+      boxSizing: 'border-box',
+    },
+  },
+}
+
+const components = {
+  Container: {
+    baseStyle: {
+      maxW: 'container.md',
+    },
+  },
+  Text: {
+    baseStyle: {
+      fontSize: '2xl',
+    },
+  },
+}
+
 export default extendTheme({
   config,
   breakpoints,
-  styles: {
-    global: {
-      '*, *:before, *:after': {
-        boxSizing: 'border-box',
-      },
-      'html, body': {
-        boxSizing: 'border-box',
-      },
-    },
-  },
-  components: {
-    Container: {
-      baseStyle: {
-        maxW: 'container.md',
-      },
-    },
-  },
+  fonts,
+  styles,
+  components,
 })

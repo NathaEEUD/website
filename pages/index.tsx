@@ -7,6 +7,7 @@ const Home: NextPage = () => {
     <VStack spacing={8}>
       <Center
         borderRadius={{ base: 'md', md: 'lg' }}
+        fontSize="lg"
         maxW={{ base: 'full', md: '70%' }}
         p={{ base: '2', md: '4' }}
         textAlign="center"
