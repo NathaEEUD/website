@@ -39,6 +39,11 @@ const components = {
       fontSize: '2xl',
     },
   },
+  Link: {
+    baseStyle: {
+      fontFamily: 'Red Hat Display',
+    },
+  },
 }
 
 export default extendTheme({

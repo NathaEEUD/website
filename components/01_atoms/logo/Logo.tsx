@@ -1,7 +1,8 @@
-import { Heading } from '@chakra-ui/react'
+import { Heading, Link } from '@chakra-ui/react'
 import '@fontsource/comforter-brush'
-import React from 'react'
 import { motion, useViewportScroll } from 'framer-motion'
+import NextLink from 'next/link'
+import React from 'react'
 
 export const Logo: React.FC = () => {
   const { scrollYProgress } = useViewportScroll()
@@ -34,27 +35,31 @@ export const Logo: React.FC = () => {
   }, [scrollYProgress])
 
   return (
-    <Heading as="h1" fontFamily="Comforter Brush">
-      N
-      <motion.span
-        animate={hookedYPostion < 0.1 ? 'show' : 'hidden'}
-        exit="hidden"
-        initial="show"
-        style={{ display: 'inline-flex' }}
-        variants={variants}
-      >
-        aste
-      </motion.span>
-      RB
-      <motion.span
-        animate={hookedYPostion < 0.1 ? 'show' : 'hidden'}
-        exit="hidden"
-        initial="show"
-        style={{ display: 'inline-flex' }}
-        variants={variants}
-      >
-        oost
-      </motion.span>
-    </Heading>
+    <NextLink passHref href="/">
+      <Link _focus={{ boxShadow: 'none' }} _hover={{ textDecoration: 'none' }}>
+        <Heading as="h1" fontFamily="Comforter Brush">
+          N
+          <motion.span
+            animate={hookedYPostion < 0.1 ? 'show' : 'hidden'}
+            exit="hidden"
+            initial="show"
+            style={{ display: 'inline-flex' }}
+            variants={variants}
+          >
+            aste
+          </motion.span>
+          RB
+          <motion.span
+            animate={hookedYPostion < 0.1 ? 'show' : 'hidden'}
+            exit="hidden"
+            initial="show"
+            style={{ display: 'inline-flex' }}
+            variants={variants}
+          >
+            oost
+          </motion.span>
+        </Heading>
+      </Link>
+    </NextLink>
   )
 }
