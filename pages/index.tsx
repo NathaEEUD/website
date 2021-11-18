@@ -1,12 +1,14 @@
 import type { NextPage } from 'next'
 
-import { Center, VStack, Avatar, Text } from '@chakra-ui/react'
+import { Avatar, Center, Text } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
   return (
-    <VStack spacing={8}>
+    <>
       <Center
+        borderColor="black"
         borderRadius={{ base: 'md', md: 'lg' }}
+        borderWidth={2}
         fontSize="lg"
         maxW={{ base: 'full', md: '70%' }}
         p={{ base: '2', md: '4' }}
@@ -14,11 +16,6 @@ const Home: NextPage = () => {
       >
         Hi 👋 My name is Nathaly and I&apos;m an Electronic Engineer and Frontend Developer
       </Center>
-
-      <Text>
-        I&apos;m from Bogot&aacute;, Colombia and a true lover of Remote Work
-        <br />I have two 🐶 🐶 and I enjoy their unconditional love and company!
-      </Text>
 
       <Avatar name="Nathaly Riaño Bejarano" size="2xl" src="/ProfileNathaly.jpg" />
 
@@ -33,7 +30,10 @@ const Home: NextPage = () => {
       </Text>
 
       <Center
+        borderColor="black"
         borderRadius={{ base: 'md', md: 'lg' }}
+        borderWidth={2}
+        fontSize="lg"
         maxW={{ base: 'full', md: '70%' }}
         p={{ base: '2', md: '4' }}
         textAlign="center"
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
       </Text>
 
       <Text>DX 🔥 UX</Text>
-    </VStack>
+    </>
   )
 }
 

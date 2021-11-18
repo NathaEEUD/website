@@ -41,20 +41,20 @@ export const Navbar: React.FC<Props> = props => {
   const { path, ...rest } = props
 
   return (
-    <Box as="nav" position="fixed" w="full" zIndex="docked" {...rest}>
+    <Box as="nav" position="fixed" w="full" zIndex="docked" {...rest} py={5}>
       <Container>
-        <HStack align="center" justify="space-between" my={4}>
-          <HStack spacing={8}>
+        <HStack align="center" justify="space-between">
+          <HStack spacing={10}>
             <Logo />
 
-            <HStack spacing={4}>
+            <HStack display={{ base: 'none', md: 'flex' }} spacing={5}>
               {navItems.map(navItem => (
                 <NavItem key={navItem.href} href={navItem.href} label={navItem.label} path={path} />
               ))}
             </HStack>
           </HStack>
 
-          <HStack spacing={4}>
+          <HStack spacing={5}>
             <ThemeToggle />
 
             <Box display={{ base: 'inline-block', md: 'none' }}>

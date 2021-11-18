@@ -1,4 +1,4 @@
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
 import { NextRouter } from 'next/router'
 import React from 'react'
@@ -29,7 +29,9 @@ const main: React.FC<Props> = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <Container pt={14}>{children}</Container>
+      <Container pt={20}>
+        <VStack spacing={10}>{children}</VStack>
+      </Container>
     </Box>
   )
 }
