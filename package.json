@@ -19,13 +19,19 @@
     "@fontsource/comforter-brush": "^4.5.0",
     "@fontsource/red-hat-display": "^4.5.1",
     "@fontsource/source-sans-pro": "^4.5.1",
+    "@inlet/react-pixi": "^6.6.5",
+    "@pixi/filter-kawase-blur": "^4.1.5",
+    "debounce": "^1.2.1",
     "framer-motion": "^4.1.17",
     "next": "12.0.3",
+    "pixi.js": "^6.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-icons": "^4.3.1"
+    "react-icons": "^4.3.1",
+    "simplex-noise": "^3.0.0"
   },
   "devDependencies": {
+    "@types/debounce": "^1.2.1",
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
     "@typescript-eslint/eslint-plugin": "^5.3.1",
