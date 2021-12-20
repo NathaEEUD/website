@@ -13,5 +13,5 @@
 }
 
 body {
-  background: var(--bg-gradient);
+  background: var(--bg-gradient) !important;
 }
