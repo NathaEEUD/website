@@ -5,7 +5,11 @@
 
   --dark-color: hsl(var(--hue), 100%, 9%);
   --light-color: hsl(var(--hue), 95%, 98%);
+
   --bg-gradient: linear-gradient(to bottom, hsl(var(--hue), 95%, 99%), hsl(var(--hue), 95%, 84%));
+  --primary-gradient: linear-gradient(45deg, var(--base) 25%, var(--complimentary-2));
+  --secondary-gradient: linear-gradient(45deg, hsl(var(--hue), 65%, 55%) 30%, hsl(var(--complimentary-hue-2), 65%, 55%));
+  --tertiary-gradient: linear-gradient(45deg, hsl(var(--hue), 65%, 55%) 85%, hsl(var(--complimentary-hue-2), 65%, 55%));
 }
 
 body {

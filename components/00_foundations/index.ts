@@ -1,2 +1,2 @@
 export { default as theme } from './theme'
-export { ThemeProvider, useTheme } from './themeContext'
+export { ThemeActionKind, ThemeProvider, useTheme } from './themeContext'

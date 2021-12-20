@@ -4,9 +4,8 @@ import Head from 'next/head'
 import { NextRouter } from 'next/router'
 import React from 'react'
 
-import { ThemeActionKind } from 'components/00_foundations/themeContext'
 import { Navbar } from '@organisms'
-import { useTheme } from '@foundations'
+import { ThemeActionKind, useTheme } from '@foundations'
 
 const PixiBackground = dynamic<React.ReactNode>(
   () => import('../../03_organisms/pixi-background/PixiBackground').then(mod => mod.PixiBackground),
