@@ -72,9 +72,9 @@ export const PixiFigure: React.FC<Props> = ({ fill }) => {
     const yNoise = simplex.noise2D(yOff, yOff)
     const scaleNoise = simplex.noise2D(xOff, yOff)
 
-    setX(getMappedNumber(xNoise, -1, 1, bounds.x.min, bounds.x.max))
-    setY(getMappedNumber(yNoise, -1, 1, bounds.y.min, bounds.y.max))
-    setScale(getMappedNumber(scaleNoise, -1, 1, 0.5, 1))
+    setX(Math.round(getMappedNumber(xNoise, -1, 1, bounds.x.min, bounds.x.max)))
+    setY(Math.round(getMappedNumber(yNoise, -1, 1, bounds.y.min, bounds.y.max)))
+    setScale(Math.round(getMappedNumber(scaleNoise, -1, 1, 0.5, 1)))
     setXOff(prevState => prevState + INC)
     setYOff(prevState => prevState + INC)
   })

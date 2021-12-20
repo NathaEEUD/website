@@ -1,10 +1,12 @@
-import { Box, Container, VStack, chakra } from '@chakra-ui/react'
+import { Box, Container, VStack } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { NextRouter } from 'next/router'
 import React from 'react'
 
+import { ThemeActionKind } from 'components/00_foundations/themeContext'
 import { Navbar } from '@organisms'
+import { useTheme } from '@foundations'
 
 const PixiBackground = dynamic<React.ReactNode>(
   () => import('../../03_organisms/pixi-background/PixiBackground').then(mod => mod.PixiBackground),
@@ -13,14 +15,20 @@ const PixiBackground = dynamic<React.ReactNode>(
   },
 )
 
-const ChakraPixiBackground = chakra(PixiBackground)
-
 interface Props {
   children: React.ReactNode
   router: NextRouter
 }
 
-const main: React.FC<Props> = ({ children, router }) => {
+const Main: React.FC<Props> = ({ children, router }) => {
+  const { dispatch } = useTheme()
+
+  React.useEffect(() => {
+    dispatch({
+      type: ThemeActionKind.UPDATE_COLOR_PALETTE,
+    })
+  }, [])
+
   return (
     <Box as="main">
       <Head>
@@ -43,29 +51,9 @@ const main: React.FC<Props> = ({ children, router }) => {
         <VStack spacing={10}>{children}</VStack>
       </Container>
 
-      <ChakraPixiBackground
-        bottom="0"
-        h="full"
-        left="0"
-        position="fixed"
-        right="0"
-        top="0"
-        w="full"
-        zIndex="hide"
-      />
-
-      {/* <ChakraSvgBackground
-        bottom="0"
-        h="full"
-        left="0"
-        position="fixed"
-        right="0"
-        top="0"
-        w="full"
-        zIndex="hide"
-      /> */}
+      <PixiBackground />
     </Box>
   )
 }
 
-export default main
+export default Main

@@ -23,6 +23,7 @@
     "@pixi/filter-kawase-blur": "^4.1.5",
     "debounce": "^1.2.1",
     "framer-motion": "^4.1.17",
+    "hsl-to-hex": "^1.0.0",
     "next": "12.0.3",
     "pixi.js": "^6.2.0",
     "react": "17.0.2",
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "@types/debounce": "^1.2.1",
+    "@types/hsl-to-hex": "^1.0.0",
     "@types/node": "16.11.7",
     "@types/react": "17.0.34",
     "@typescript-eslint/eslint-plugin": "^5.3.1",

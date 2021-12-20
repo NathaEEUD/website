@@ -1,0 +1,13 @@
+:root {
+  --base: hsl(var(--hue), 95%, 50%);
+  --complimentary-1: hsl(var(--complimentary-hue-1), 95%, 50%);
+  --complimentary-2: hsl(var(--complimentary-hue-2), 95%, 50%);
+
+  --dark-color: hsl(var(--hue), 100%, 9%);
+  --light-color: hsl(var(--hue), 95%, 98%);
+  --bg-gradient: linear-gradient(to bottom, hsl(var(--hue), 95%, 99%), hsl(var(--hue), 95%, 84%));
+}
+
+body {
+  background: var(--bg-gradient);
+}

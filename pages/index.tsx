@@ -11,9 +11,11 @@ const Home: NextPage = () => {
           <Text
             as="span"
             bgClip="text"
-            bgGradient="linear(to-l, #7928CA, #FF0080)"
             fontSize="4xl"
             fontWeight="extrabold"
+            sx={{
+              backgroundImage: 'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
+            }}
           >
             Nathaly
           </Text>{' '}
