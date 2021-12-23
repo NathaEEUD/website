@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 
-import { Avatar, Text, VStack } from '@chakra-ui/react'
+import { Avatar, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 
+import { Lottie } from '@atoms'
 import { Section } from '@foundations'
 import { Blockquote } from 'components/00_foundations/Blockquote'
 
@@ -88,7 +89,8 @@ const Home: NextPage = () => {
           I&apos;m an experienced developer, primarily with the JavaScript ecosystem, who found the
           &apos;click&apos; with React.js and the Component Driven Development (CDD) methodology
         </MotionText>
-        {/* TODO: Add CDD gif */}
+
+        <Lottie path="/lottie-atomic-design.json" w="full" />
       </Section>
 
       <Section>
