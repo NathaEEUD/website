@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "gen:theme-typings": "chakra-cli tokens components/00_foundations/theme.ts"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.1.1",
@@ -32,6 +33,7 @@
     "simplex-noise": "^3.0.0"
   },
   "devDependencies": {
+    "@chakra-ui/cli": "^1.6.0",
     "@types/debounce": "^1.2.1",
     "@types/hsl-to-hex": "^1.0.0",
     "@types/node": "16.11.7",
