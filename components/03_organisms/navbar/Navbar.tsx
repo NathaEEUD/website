@@ -41,7 +41,16 @@ export const Navbar: React.FC<Props> = props => {
   const { path, ...rest } = props
 
   return (
-    <Box as="nav" position="fixed" w="full" zIndex="docked" {...rest} py={5}>
+    <Box
+      as="nav"
+      position="fixed"
+      w="full"
+      zIndex="docked"
+      {...rest}
+      backdropFilter="saturate(180%) blur(5px)"
+      backgroundColor="rgba(255, 255, 255, 0.8)"
+      py={5}
+    >
       <Container>
         <HStack align="center" justify="space-between">
           <HStack spacing={10}>
