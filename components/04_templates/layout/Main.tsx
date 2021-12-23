@@ -29,7 +29,14 @@ const Main: React.FC<Props> = ({ children, router }) => {
   }, [])
 
   return (
-    <Box as="main">
+    <Box
+      as="main"
+      h="100vh"
+      overflowY="scroll"
+      sx={{
+        scrollSnapType: 'y mandatory',
+      }}
+    >
       <Head>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="Nathaly's homepage" name="description" />
@@ -46,11 +53,11 @@ const Main: React.FC<Props> = ({ children, router }) => {
 
       <Navbar path={router.asPath} />
 
-      <Container pt={20}>
-        <VStack spacing={10}>{children}</VStack>
-      </Container>
-
       <PixiBackground />
+
+      <Container>
+        <VStack>{children}</VStack>
+      </Container>
     </Box>
   )
 }

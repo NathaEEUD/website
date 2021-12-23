@@ -1,18 +1,18 @@
-import { HStack, useStyleConfig } from '@chakra-ui/react'
+import { Stack } from '@chakra-ui/react'
 
-export const Section = (props: any) => {
-  const styles = useStyleConfig('Section')
-
-  return (
-    <HStack
-      __css={styles}
-      as="section"
-      h="calc(85vh - 5rem)"
-      justify="space-between"
-      mt={10}
-      // spacing={10}
-      w="full"
-      {...props}
-    />
-  )
-}
+export const Section = (props: any) => (
+  <Stack
+    alignItems="center"
+    as="section"
+    direction={{ base: 'column', md: 'row' }}
+    h="100vh"
+    justify={{ base: 'center', md: 'space-between' }}
+    m="0"
+    spacing={{ base: '4', md: '8' }}
+    w="full"
+    {...props}
+    sx={{
+      scrollSnapAlign: 'center',
+    }}
+  />
+)

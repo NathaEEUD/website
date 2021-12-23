@@ -44,14 +44,22 @@ const components = {
       fontFamily: 'Red Hat Display',
     },
   },
-  Section: {
+  Blockquote: {
     baseStyle: {
-      background: 'rgba(255, 255, 255, 0.375)',
-      boxShadow: '0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1)',
-      borderRadius: 'xl',
+      width: '100%',
+      scrollSnapAlign: 'center',
       border: '1px solid rgba(255, 255, 255, 0.25)',
-      backdropFilter: 'blur(4px)',
-      padding: '8rem 6rem',
+      borderRadius: 'xl',
+      boxShadow: '0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1)',
+    },
+    variants: {
+      featured: {
+        background: 'rgba(255, 255, 255, 0.375)',
+        backdropFilter: 'blur(4px)',
+      },
+    },
+    defaultProps: {
+      variant: 'featured',
     },
   },
 }
