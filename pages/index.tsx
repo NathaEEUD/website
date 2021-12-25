@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 import { Lottie } from '@atoms'
 import { Section } from '@foundations'
 import { Blockquote } from 'components/00_foundations/Blockquote'
+import { favoriteTechStack } from 'config'
+import { List } from '@molecules'
 
 const MotionText = motion(Text)
 const MotionAvatar = motion(Avatar)
@@ -33,7 +35,7 @@ const Home: NextPage = () => {
           >
             Nathaly
           </Text>{' '}
-          and I&apos;m an Electronic Engineer and Frontend Developer
+          and I&apos;m a passionate Electronic Engineer and Frontend Developer
         </MotionText>
 
         <MotionAvatar
@@ -94,7 +96,12 @@ const Home: NextPage = () => {
       </Section>
 
       <Section>
-        <Blockquote>
+        <Blockquote
+          flexDirection="column"
+          sx={{
+            gap: '40px',
+          }}
+        >
           <MotionText
             animate={{ y: 0, opacity: 1 }}
             fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
@@ -103,32 +110,10 @@ const Home: NextPage = () => {
             textAlign="center"
             transition={{ duration: 1 }}
           >
-            I&apos;m really passionate about technology, electronics and software development
-            <br />
-            <Text
-              as="span"
-              bgClip="text"
-              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-              fontWeight="extrabold"
-              sx={{
-                backgroundImage: 'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
-              }}
-            >
-              DX
-            </Text>{' '}
-            🔥{' '}
-            <Text
-              as="span"
-              bgClip="text"
-              fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-              fontWeight="extrabold"
-              sx={{
-                backgroundImage: 'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
-              }}
-            >
-              UX
-            </Text>
+            Currently, my favorite tech stack consists of the following:
           </MotionText>
+
+          <List items={favoriteTechStack} />
         </Blockquote>
       </Section>
 

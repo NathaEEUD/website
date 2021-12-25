@@ -18,8 +18,8 @@ export const Blockquote: React.FC<Props> = props => {
       as="blockquote"
       display="flex"
       justifyContent="center"
-      px={{ base: '14', md: '18', lg: '20' }}
-      py={{ base: '18', md: '22', lg: '24' }}
+      px={{ base: '6', md: '16', lg: '20' }}
+      py={{ base: '10', md: '22', lg: '24' }}
       w="full"
       {...rest}
     />

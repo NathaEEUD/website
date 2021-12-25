@@ -49,3 +49,21 @@ export const favoriteTechStack: Array<IItem> = [
     label: 'React Table',
   },
 ]
+
+export const priorityCourses: Array<IItem> = [
+  {
+    label: 'Three.js',
+  },
+  {
+    label: 'Creative Frontend',
+  },
+  {
+    label: 'web Optimization',
+  },
+  {
+    label: 'Webflow',
+  },
+  {
+    label: 'Blender',
+  },
+]
