@@ -1,16 +1,26 @@
-import { Center, useStyleConfig } from '@chakra-ui/react'
+import { Box, PropsOf, ThemingProps, useStyleConfig } from '@chakra-ui/react'
+import { Dict } from '@chakra-ui/utils'
+import React from 'react'
 
-export const Blockquote = (props: any) => {
+type Props = PropsOf<typeof Box> & {
+  variant?: ThemingProps<string> & Dict<any>
+}
+
+export const Blockquote: React.FC<Props> = props => {
   const { variant, ...rest } = props
 
   const styles = useStyleConfig('Blockquote', variant)
 
   return (
-    <Center
+    <Box
       __css={styles}
+      alignItems="center"
       as="blockquote"
-      px={{ base: '18', md: '22', lg: '24' }}
-      py={{ base: '20', md: '28', lg: '32' }}
+      display="flex"
+      justifyContent="center"
+      px={{ base: '14', md: '18', lg: '20' }}
+      py={{ base: '18', md: '22', lg: '24' }}
+      w="full"
       {...rest}
     />
   )

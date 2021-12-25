@@ -48,7 +48,7 @@ export const Navbar: React.FC<Props> = props => {
       zIndex="docked"
       {...rest}
       backdropFilter="saturate(180%) blur(5px)"
-      backgroundColor="rgba(255, 255, 255, 0.5)"
+      backgroundColor="whiteAlpha.500"
       py={5}
     >
       <Container>
