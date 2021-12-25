@@ -1,0 +1,1 @@
+export { favoriteTechStack } from './content'
