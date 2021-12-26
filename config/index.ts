@@ -1,2 +1,2 @@
-export { favoriteTechStack, priorityCourses } from './content'
-export type { IItem } from './types'
+export { favoriteTechStack, priorityCourses, works } from './content'
+export type { IItem, ITimelineItem } from './types'
