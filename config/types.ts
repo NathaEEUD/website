@@ -5,9 +5,13 @@ export interface IItem {
   label: string
 }
 
-interface ITimelineItemContent {
-  img?: string
+export interface IContent {
+  href?: string
+  github?: string
+  img?: any
   title: string
+  badge?: string
+  subtitle?: string
   description: string
   technologies: Array<IItem>
 }
@@ -19,5 +23,4 @@ export interface ITimelineItem {
   badge?: string
   subtitle: string
   description: string
-  content?: Array<ITimelineItemContent>
 }

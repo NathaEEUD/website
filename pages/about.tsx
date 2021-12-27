@@ -43,8 +43,8 @@ const About: NextPage = () => {
           animate={{ x: 0, opacity: 1 }}
           h={{ base: '40', md: '3xs', lg: '2xs' }}
           initial={{ x: 50, opacity: 0 }}
-          name="Nathaly Riaño Bejarano"
-          src="/ProfileNathaly.jpg"
+          name="Crash Aslan"
+          src="/CrashAslan.jpg"
           transition={{ duration: 0.7, delay: 0.5 }}
           w={{ base: '40', md: '3xs', lg: '2xs' }}
         />
