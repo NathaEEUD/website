@@ -1,17 +1,8 @@
 import type { NextPage } from 'next'
 
-import {
-  Avatar,
-  Badge,
-  Box,
-  Heading,
-  HStack,
-  Link,
-  Text,
-  useMediaQuery,
-  VStack,
-} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { Badge, Box, Heading, HStack, Link, Text, useMediaQuery, VStack } from '@chakra-ui/react'
+import Head from 'next/head'
 import NextImage from 'next/image'
 import { FiExternalLink } from 'react-icons/fi'
 import { SiGithub } from 'react-icons/si'
@@ -29,6 +20,10 @@ const Projects: NextPage = () => {
 
   return (
     <>
+      <Head>
+        <title>NasteRBoost | Projects</title>
+      </Head>
+
       {/* <Section>
         <MotionText
           animate={{ y: 0, opacity: 1 }}

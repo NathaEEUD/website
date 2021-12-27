@@ -2,11 +2,12 @@ import type { NextPage } from 'next'
 
 import { Avatar, Text } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import Head from 'next/head'
 
 import { Lottie } from '@atoms'
 import { Section } from '@foundations'
-import { Blockquote } from 'components/00_foundations/Blockquote'
 import { List } from '@molecules'
+import { Blockquote } from 'components/00_foundations/Blockquote'
 import { priorityCourses } from 'config'
 
 const MotionText = motion(Text)
@@ -15,6 +16,10 @@ const MotionAvatar = motion(Avatar)
 const About: NextPage = () => {
   return (
     <>
+      <Head>
+        <title>NasteRBoost | About</title>
+      </Head>
+
       <Section>
         <MotionText
           animate={{ y: 0, opacity: 1 }}
