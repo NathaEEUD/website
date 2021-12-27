@@ -29,7 +29,7 @@ const Projects: NextPage = () => {
 
   return (
     <>
-      <Section>
+      {/* <Section>
         <MotionText
           animate={{ y: 0, opacity: 1 }}
           fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
@@ -51,7 +51,7 @@ const Projects: NextPage = () => {
           </Text>{' '}
           that I have done!
         </MotionText>
-      </Section>
+      </Section> */}
 
       {projects.map(project => (
         <Section key={project.title}>

@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { NextRouter } from 'next/router'
 import React from 'react'
 
-import { Navbar } from '@organisms'
+import { Footer, Navbar } from '@organisms'
 import { ThemeActionKind, useTheme } from '@foundations'
 
 const PixiBackground = dynamic<React.ReactNode>(
@@ -58,6 +58,8 @@ const Main: React.FC<Props> = ({ children, router }) => {
       <Container>
         <VStack>{children}</VStack>
       </Container>
+
+      <Footer />
     </Box>
   )
 }
