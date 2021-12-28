@@ -27,16 +27,6 @@ import {
   SiZalando,
 } from 'react-icons/si'
 
-import marvelImg from '/marvel.png'
-import ticTacToeImg from '/tictactoe-mockup.png'
-import protegoImg from '/protego.png'
-import unicefImg from '/unicef.png'
-import codelarImg from '/codelar.png'
-import transcriberImg from '/transcriber-mockup.png'
-import visitorImg from '/visitor-mockup.png'
-import gnssImg from '/gnss-mockup.png'
-import electronicVotingImg from '/electronic-voting-mockup.png'
-
 import { IContent, IItem, ITimelineItem } from './types'
 
 export const favoriteTechStack: Array<IItem> = [
@@ -148,7 +138,7 @@ export const projects: Array<IContent> = [
   {
     href: 'https://marvel-store-nasterb.vercel.app/',
     github: 'https://github.com/NathaEEUD/marvel-store',
-    img: marvelImg,
+    img: '/marvel.png',
     title: 'Marvel Store',
     badge: 'Web Application',
     subtitle: 'Personal Project',
@@ -175,7 +165,7 @@ export const projects: Array<IContent> = [
   },
   {
     github: 'https://github.com/NathaEEUD/Project-TicTacToe',
-    img: ticTacToeImg,
+    img: '/tictactoe-mockup.png',
     title: 'Tic Tac Toe',
     badge: 'Web Application',
     subtitle: 'Personal Project',
@@ -214,7 +204,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://www.protegosolutions.io/',
-    img: protegoImg,
+    img: '/protego.png',
     title: 'Backoffice',
     badge: 'Web Application',
     subtitle: 'Company: Protego Solutions',
@@ -253,7 +243,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://donaciones.unicef.org.co/',
-    img: unicefImg,
+    img: '/unicef.png',
     title: 'UNICEF Colombia',
     badge: 'Website',
     subtitle: 'Company: CodeLar',
@@ -280,7 +270,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://codelar.co/',
-    img: codelarImg,
+    img: '/codelar.png',
     title: 'CodeLar Landing Page',
     badge: 'Website',
     subtitle: 'Company: CodeLar',
@@ -315,7 +305,7 @@ export const projects: Array<IContent> = [
   },
   {
     title: 'Visitor Control',
-    img: visitorImg,
+    img: '/transcriber-mockup.png',
     badge: 'Web Application',
     subtitle: 'Company: Robotec',
     description:
@@ -353,7 +343,7 @@ export const projects: Array<IContent> = [
   },
   {
     title: 'Transcriber',
-    img: transcriberImg,
+    img: '/visitor-mockup.png',
     badge: 'Web Application',
     subtitle: 'Company: Robotec',
     description:
@@ -392,7 +382,7 @@ export const projects: Array<IContent> = [
   {
     href: 'https://rita.udistrital.edu.co/gps/',
     title: 'GNSS Geodetic Station',
-    img: gnssImg,
+    img: '/gnss-mockup.png',
     badge: 'Website',
     subtitle: 'Company: District University',
     description:
@@ -418,7 +408,7 @@ export const projects: Array<IContent> = [
   },
   {
     title: 'Electronic Voting',
-    img: electronicVotingImg,
+    img: '/electronic-voting-mockup.png',
     badge: 'Web Application',
     subtitle: 'Company: District University',
     description:

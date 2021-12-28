@@ -19,7 +19,7 @@ export const NavItem: React.FC<Props> = props => {
   if (isMenuItem) {
     if (label === 'Source') {
       return (
-        <NextLink passHref href={href}>
+        <NextLink passHref href={href} scroll={true}>
           <MenuItem
             _target="blank"
             align="center"

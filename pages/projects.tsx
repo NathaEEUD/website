@@ -1,9 +1,18 @@
 import type { NextPage } from 'next'
 
+import {
+  Badge,
+  Box,
+  Heading,
+  HStack,
+  Img,
+  Link,
+  Text,
+  useMediaQuery,
+  VStack,
+} from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { Badge, Box, Heading, HStack, Link, Text, useMediaQuery, VStack } from '@chakra-ui/react'
 import Head from 'next/head'
-import NextImage from 'next/image'
 import { FiExternalLink } from 'react-icons/fi'
 import { SiGithub } from 'react-icons/si'
 
@@ -13,7 +22,6 @@ import { Section } from '@foundations'
 
 const MotionVStack = motion(VStack)
 const MotionBox = motion(Box)
-const MotionText = motion(Text)
 
 const Projects: NextPage = () => {
   const [isLargerThan768] = useMediaQuery('(min-width: 768px)')
@@ -23,30 +31,6 @@ const Projects: NextPage = () => {
       <Head>
         <title>NasteRBoost | Projects</title>
       </Head>
-
-      {/* <Section>
-        <MotionText
-          animate={{ y: 0, opacity: 1 }}
-          fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-          initial={{ y: -50, opacity: 0 }}
-          maxW={{ base: 'full', md: '60%' }}
-          transition={{ duration: 1 }}
-        >
-          Here, you can find the{' '}
-          <Text
-            as="span"
-            bgClip="text"
-            fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}
-            fontWeight="extrabold"
-            sx={{
-              backgroundImage: 'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
-            }}
-          >
-            projects
-          </Text>{' '}
-          that I have done!
-        </MotionText>
-      </Section> */}
 
       {projects.map(project => (
         <Section key={project.title}>
@@ -97,11 +81,9 @@ const Projects: NextPage = () => {
               initial={{ x: 50, opacity: 0 }}
               transition={{ duration: 0.7, delay: 0.5 }}
             >
-              <NextImage
+              <Img
                 alt={project.title}
-                height={isLargerThan768 ? 235 : 135}
-                layout="fixed"
-                objectFit="contain"
+                objectFit="cover"
                 src={project.img}
                 width={isLargerThan768 ? 400 : 300}
               />

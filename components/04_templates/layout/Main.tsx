@@ -1,7 +1,7 @@
 import { Box, Container, VStack } from '@chakra-ui/react'
 import dynamic from 'next/dynamic'
 import Head from 'next/head'
-import { NextRouter } from 'next/router'
+import { NextRouter, Router } from 'next/router'
 import React from 'react'
 
 import { Footer, Navbar } from '@organisms'
@@ -20,16 +20,22 @@ interface Props {
 }
 
 const Main: React.FC<Props> = ({ children, router }) => {
+  const mainRef = React.useRef() as React.MutableRefObject<HTMLDivElement>
   const { dispatch } = useTheme()
 
   React.useEffect(() => {
     dispatch({
       type: ThemeActionKind.UPDATE_COLOR_PALETTE,
     })
+
+    Router.events.on('routeChangeComplete', () => {
+      mainRef.current.scrollTo(0, 0)
+    })
   }, [])
 
   return (
     <Box
+      ref={mainRef}
       as="main"
       h="100vh"
       overflowY="scroll"
