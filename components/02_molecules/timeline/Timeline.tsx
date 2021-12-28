@@ -42,7 +42,7 @@ export const Timeline: React.FC<Props> = props => {
             color: '#fff',
           }}
         >
-          <Heading as="h3" size={{ base: 'xs', md: 'md' }}>
+          <Heading as="h3" fontSize={{ base: 'xs', md: 'md' }}>
             {item.title}
             {item.badge && (
               <Badge colorScheme="purple" display="block" maxW="max-content" my="0.5">
