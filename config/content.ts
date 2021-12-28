@@ -138,7 +138,7 @@ export const projects: Array<IContent> = [
   {
     href: 'https://marvel-store-nasterb.vercel.app/',
     github: 'https://github.com/NathaEEUD/marvel-store',
-    img: '/marvel.png',
+    img: '/marvel-mockup.png',
     title: 'Marvel Store',
     badge: 'Web Application',
     subtitle: 'Personal Project',
@@ -204,7 +204,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://www.protegosolutions.io/',
-    img: '/protego.png',
+    img: '/protego-mockup.png',
     title: 'Backoffice',
     badge: 'Web Application',
     subtitle: 'Company: Protego Solutions',
@@ -243,7 +243,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://donaciones.unicef.org.co/',
-    img: '/unicef.png',
+    img: '/unicef-mockup.png',
     title: 'UNICEF Colombia',
     badge: 'Website',
     subtitle: 'Company: CodeLar',
@@ -270,7 +270,7 @@ export const projects: Array<IContent> = [
   },
   {
     href: 'https://codelar.co/',
-    img: '/codelar.png',
+    img: '/codelar-mockup.png',
     title: 'CodeLar Landing Page',
     badge: 'Website',
     subtitle: 'Company: CodeLar',
