@@ -27,15 +27,15 @@ import {
   SiZalando,
 } from 'react-icons/si'
 
-import marvelImg from '../public/marvel.png'
-import ticTacToeImg from '../public/tictactoe-mockup.png'
-import protegoImg from '../public/protego.png'
-import unicefImg from '../public/unicef.png'
-import codelarImg from '../public/codelar.png'
-import transcriberImg from '../public/transcriber-mockup.png'
-import visitorImg from '../public/visitor-mockup.png'
-import gnssImg from '../public/gnss-mockup.png'
-import electronicVotingImg from '../public/electronic-voting-mockup.png'
+import marvelImg from '/marvel.png'
+import ticTacToeImg from '/tictactoe-mockup.png'
+import protegoImg from '/protego.png'
+import unicefImg from '/unicef.png'
+import codelarImg from '/codelar.png'
+import transcriberImg from '/transcriber-mockup.png'
+import visitorImg from '/visitor-mockup.png'
+import gnssImg from '/gnss-mockup.png'
+import electronicVotingImg from '/electronic-voting-mockup.png'
 
 import { IContent, IItem, ITimelineItem } from './types'
 
