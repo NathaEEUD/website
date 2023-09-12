@@ -19,10 +19,10 @@ type Props = PropsOf<typeof Box> & {
 }
 
 const navItems: INavItem[] = [
-  {
-    label: 'About',
-    href: '/about',
-  },
+  // {
+  //   label: 'About',
+  //   href: '/about',
+  // },
   {
     label: 'Works',
     href: '/works',
@@ -31,10 +31,10 @@ const navItems: INavItem[] = [
     label: 'Projects',
     href: '/projects',
   },
-  {
-    label: 'Source',
-    href: 'https://github.com/NathaEEUD',
-  },
+  // {
+  //   label: 'Source',
+  //   href: 'https://github.com/NathaEEUD',
+  // },
 ]
 
 export const Navbar: React.FC<Props> = props => {
