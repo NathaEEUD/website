@@ -7,6 +7,8 @@ import React from 'react'
 import { useTheme } from '@foundations'
 import { getRandomNumber, useWindowDimensions } from 'utils'
 
+const NUMBER_OF_CIRCLES = 6
+
 const PixiFigure = dynamic<React.ReactNode>(
   () => import('../../02_molecules/pixi-figure/PixiFigure').then(mod => mod.PixiFigure),
   {
@@ -19,12 +21,12 @@ const Filters = withFilters(Container, {
 })
 
 const StyledStage = styled(Stage)`
+  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none;
   z-index: -1;
 `
 
@@ -47,7 +49,7 @@ export const PixiBackground = () => {
       width={width}
     >
       <Filters blur={{ blur: 30, quality: 10 }}>
-        {Array.from(Array(10).keys()).map((figure, index) => {
+        {Array.from(Array(NUMBER_OF_CIRCLES).keys()).map((figure, index) => {
           props.fill = parseInt(
             Object.values(state)[~~getRandomNumber(0, Object.keys(state).length)].replace(
               '#',

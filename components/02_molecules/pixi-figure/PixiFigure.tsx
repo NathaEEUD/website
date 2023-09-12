@@ -11,7 +11,7 @@ interface Props {
 }
 
 const LIMIT = 1000
-const INC = 0.002
+const INC = 0.001
 const simplex = new SimplexNoise()
 
 export const PixiFigure: React.FC<Props> = ({ fill }) => {
@@ -79,5 +79,5 @@ export const PixiFigure: React.FC<Props> = ({ fill }) => {
     setYOff(prevState => prevState + INC)
   })
 
-  return <Graphics alpha={0.825} draw={draw} scale={scale} x={x} y={y} />
+  return <Graphics alpha={0.175} draw={draw} scale={scale} x={x} y={y} />
 }
