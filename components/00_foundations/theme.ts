@@ -13,7 +13,7 @@ const breakpoints = createBreakpoints({
 })
 
 const fonts = {
-  heading: 'Red Hat Display',
+  heading: `'Plain Light', sans-serif`,
   body: `'Canela Web', serif`,
 }
 
@@ -41,7 +41,8 @@ const components = {
   },
   Link: {
     baseStyle: {
-      fontFamily: 'Red Hat Display',
+      fontFamily: `'Plain Light', sans-serif`,
+      fontWeight: 700,
     },
   },
   Blockquote: {
