@@ -14,7 +14,7 @@ const breakpoints = createBreakpoints({
 
 const fonts = {
   heading: 'Red Hat Display',
-  body: 'Source Sans Pro',
+  body: `'Canela Web', serif`,
 }
 
 const styles = {
