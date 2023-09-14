@@ -1,4 +1,4 @@
-import { MdWork } from 'react-icons/md'
+import { MdComputer } from 'react-icons/md'
 import {
   SiAngular,
   SiBitwig,
@@ -108,16 +108,24 @@ export const priorityCourses: Array<IItem> = [
 
 export const works: Array<ITimelineItem> = [
   {
-    icon: MdWork,
-    title: 'Protego Solutions',
-    date: 'Apr 2021 - Present',
+    icon: MdComputer,
+    title: 'NovoEd',
+    date: 'May 2022 - Present',
     badge: 'Fulltime',
+    subtitle: 'Software Engineer',
+    description: `Software Engineer in charge of developing frontend features for NovoEd, this includes analyzing requirements, planning, executing, conducting quality assurance checks, and shipping to production. I work with a primary stack that includes Angular, React, Typescript, Redux, RTK, and Storybook. In addition to supporting the legacy codebase, I am also working towards migrating from Angular to React and improving performance to decrease the platform's load speed.`,
+  },
+  {
+    icon: MdComputer,
+    title: 'Protego Solutions',
+    date: 'Apr 2021 - Apr 2022',
+    badge: 'Freelance -> Fulltime',
     subtitle: 'Senior Frontend Developer',
     description:
       'Developer and frontend leader in charge of bringing the MVP to production, ensuring a project with good coding practices, readable, maintainable and scalable during the implementation of new features and refactoring of existing ones. Also, be involved in the search and implementation of technological solutions understanding the business logic, objectives and requirements.',
   },
   {
-    icon: MdWork,
+    icon: MdComputer,
     title: 'Seico Technology',
     date: 'Apr 2020 - Sep 2020',
     badge: 'Freelance',
@@ -126,7 +134,7 @@ export const works: Array<ITimelineItem> = [
       'Leader of the redesign of the user interface of the QualyFlight web application, using the Angular 8 framework and the Atomic Design and Component Based Development methodology for the refactoring of the code.',
   },
   {
-    icon: MdWork,
+    icon: MdComputer,
     title: 'CodeLar',
     date: 'Mar 2020 - Jun 2020',
     badge: 'Fulltime',
@@ -135,7 +143,7 @@ export const works: Array<ITimelineItem> = [
       'Developer focused on the frontend implementation of CodeLar projects, with UNICEF Colombia being the main one. In general, I carried out the analysis of the needs / requirements / problems and contributed in the search and implementation of the solution.',
   },
   {
-    icon: MdWork,
+    icon: MdComputer,
     title: 'Robotec',
     date: 'Mar 2019 - Feb 2020',
     badge: 'Fulltime',
@@ -144,13 +152,13 @@ export const works: Array<ITimelineItem> = [
       'Web application developer with Angular 8 on the Frontend side and microservices with NodeJs / ExpressJs on the Backend side, with Socket.io and Mongodb for the implementation of real-time communication through Websocket technology.',
   },
   {
-    icon: MdWork,
+    icon: MdComputer,
     title: 'Universidad Distrital',
     date: 'Aug 2018 - Dec 2018',
     badge: 'Contractor',
     subtitle: 'Frontend Developer',
     description:
-      'Web application developer in charge of carrying out the technical management, administration and updating of the RITA website and developing, maintaining and supervising software solutions that support research projects and some processes of the District University dependencies.',
+      'Web application developer in charge of carrying out the technical management, administration and updating of the RITA website and developing, maintaining and supervising software solutions, such as the website, developing a scrapper to obtain updated information, the mobile app, among others.',
   },
 ]
 
