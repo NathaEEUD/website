@@ -12,7 +12,7 @@ const Works: NextPage = () => {
         <title>NasteRBoost | Works</title>
       </Head>
 
-      <Timeline items={works} mt="5rem" />
+      <Timeline items={works} mb="4rem" mt="5rem" />
     </>
   )
 }

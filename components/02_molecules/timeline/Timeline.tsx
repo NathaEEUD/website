@@ -3,7 +3,9 @@ import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 
 import { ITimelineItem } from 'config'
+
 import 'react-vertical-timeline-component/style.min.css'
+import { css } from '@emotion/react'
 
 type Props = PropsOf<typeof Flex> & {
   items?: Array<ITimelineItem>
@@ -22,6 +24,20 @@ export const Timeline: React.FC<Props> = props => {
     return <TheIcon {...props} />
   }
 
+  const boxStyles = css`
+    .vertical-timeline-element-content {
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+      background: rgba(255, 255, 255, 0.375);
+      backdrop-filter: blur(4px);
+
+      .vertical-timeline-element-date,
+      p {
+        font-weight: 600;
+      }
+    }
+  `
+
   return (
     <ChakraVerticalTimeline
       sx={{
@@ -34,6 +50,7 @@ export const Timeline: React.FC<Props> = props => {
       {items?.map(item => (
         <ChakraVerticalTimelineElement
           key={item?.title}
+          css={boxStyles}
           date={item?.date}
           head={true}
           icon={<Icon icon={item.icon} />}
@@ -42,17 +59,42 @@ export const Timeline: React.FC<Props> = props => {
             color: '#fff',
           }}
         >
-          <Heading as="h3" fontSize={{ base: 'xs', md: 'md' }}>
-            {item.title}
+          <Flex
+            direction="column"
+            sx={{
+              gap: '8px',
+            }}
+          >
+            <Heading
+              as="h3"
+              bgClip="text"
+              fontSize={{ base: 'md' }}
+              sx={{
+                backgroundImage: 'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
+              }}
+            >
+              {item.title}
+            </Heading>
+            <Heading as="h6" fontSize={{ base: 'md', md: 'lg' }} fontWeight="extrabold">
+              {item.subtitle}
+            </Heading>
             {item.badge && (
-              <Badge colorScheme="purple" display="block" maxW="max-content" my="0.5">
+              <Badge
+                display="block"
+                fontWeight="700"
+                maxW="max-content"
+                opacity="0.7"
+                p="1"
+                sx={{
+                  backgroundImage:
+                    'linear-gradient(45deg, var(--base) 25%, var(--complimentary-2))',
+                  backdropFilter: 'blur(4px)',
+                }}
+              >
                 {item.badge}
               </Badge>
             )}
-          </Heading>
-          <Heading as="h6" size="xs">
-            {item.subtitle}
-          </Heading>
+          </Flex>
           <Text>{item.description}</Text>
         </ChakraVerticalTimelineElement>
       ))}
