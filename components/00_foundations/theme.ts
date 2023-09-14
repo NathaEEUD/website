@@ -48,7 +48,6 @@ const components = {
   Blockquote: {
     baseStyle: {
       width: '100%',
-      scrollSnapAlign: 'center',
       border: '1px solid rgba(255, 255, 255, 0.25)',
       borderRadius: 'xl',
       boxShadow: '0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1)',

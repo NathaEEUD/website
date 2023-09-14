@@ -11,8 +11,5 @@ export const Section = (props: any) => (
     spacing={{ base: '4', md: '8' }}
     w="full"
     {...props}
-    sx={{
-      scrollSnapAlign: 'center',
-    }}
   />
 )
