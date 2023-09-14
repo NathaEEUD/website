@@ -49,7 +49,7 @@ export const Navbar: React.FC<Props> = props => {
       {...rest}
       backdropFilter="saturate(180%) blur(5px)"
       backgroundColor="whiteAlpha.500"
-      py={5}
+      py={4}
     >
       <Container>
         <HStack align="center" justify="space-between">
