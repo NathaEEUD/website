@@ -25,6 +25,10 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiZalando,
+  SiPython,
+  SiDjango,
+  SiDocker,
+  SiPostgresql,
 } from 'react-icons/si'
 
 import { IContent, IItem, ITimelineItem } from './types'
@@ -65,6 +69,22 @@ export const favoriteTechStack: Array<IItem> = [
   {
     icon: SiReacttable,
     label: 'React Table',
+  },
+  {
+    icon: SiPython,
+    label: 'Python',
+  },
+  {
+    icon: SiDjango,
+    label: 'Django',
+  },
+  {
+    icon: SiDocker,
+    label: 'Docker',
+  },
+  {
+    icon: SiPostgresql,
+    label: 'SQL',
   },
 ]
 
