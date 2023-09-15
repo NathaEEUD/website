@@ -23,25 +23,26 @@ export const Footer: React.FC = () => {
               href="https://github.com/NathaEEUD"
             >
               <Icon
-                _hover={{ color: 'gray.600' }}
+                _hover={{ color: 'var(--complimentary-1)' }}
                 as={SiGithub}
                 display="block"
-                h={{ base: '3', md: '4' }}
+                h={{ base: '4', md: '5' }}
                 transition="color 0.2s"
-                w={{ base: '3', md: '4' }}
+                w={{ base: '4', md: '5' }}
               />
             </Link>
             <Link
+              isExternal
               aria-label="Go to NasterBoost LinkedIn page"
               href="https://www.linkedin.com/in/nasterb/"
             >
               <Icon
-                _hover={{ color: 'gray.600' }}
+                _hover={{ color: 'var(--complimentary-1)' }}
                 as={SiLinkedin}
                 display="block"
-                h={{ base: '3', md: '4' }}
+                h={{ base: '4', md: '5' }}
                 transition="color 0.2s"
-                w={{ base: '3', md: '4' }}
+                w={{ base: '4', md: '5' }}
               />
             </Link>
             <Link
@@ -50,17 +51,17 @@ export const Footer: React.FC = () => {
               href="https://twitter.com/nasterboost"
             >
               <Icon
-                _hover={{ color: 'gray.600' }}
+                _hover={{ color: 'var(--complimentary-1)' }}
                 as={SiTwitter}
                 display="block"
-                h={{ base: '3', md: '4' }}
+                h={{ base: '4', md: '5' }}
                 transition="color 0.2s"
-                w={{ base: '3', md: '4' }}
+                w={{ base: '4', md: '5' }}
               />
             </Link>
           </HStack>
 
-          <Text fontSize="sm">
+          <Text fontSize="md">
             Developed by <strong>@nasterboost</strong>
           </Text>
         </HStack>
