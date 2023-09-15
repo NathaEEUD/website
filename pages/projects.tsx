@@ -17,6 +17,7 @@ import { FiExternalLink } from 'react-icons/fi'
 import { SiGithub } from 'react-icons/si'
 
 import { projects } from 'config'
+import { Heading as AtomHeading } from '@atoms'
 import { List } from '@molecules'
 import { Section } from '@foundations'
 
@@ -42,35 +43,41 @@ const Projects: NextPage = () => {
             spacing="4"
             transition={{ duration: 1 }}
           >
-            <Heading as="h2" fontSize="3xl">
-              {project.title}
-            </Heading>
+            <AtomHeading title={project.title} />
 
             <HStack spacing="4">
               {project.badge && (
-                <Badge colorScheme="purple" display="block" maxW="max-content" variant="outline">
+                <Badge
+                  colorScheme="purple"
+                  display="block"
+                  maxW="max-content"
+                  p="1"
+                  variant="outline"
+                >
                   {project.badge}
                 </Badge>
               )}
 
               {project?.github && (
-                <Link isExternal colorScheme="teal" href={project.github} size="sm">
+                <Link isExternal colorScheme="teal" fontSize="xl" href={project.github}>
                   <SiGithub />
                 </Link>
               )}
 
               {project?.href && (
-                <Link isExternal colorScheme="teal" href={project.href} size="sm">
+                <Link isExternal colorScheme="teal" fontSize="xl" href={project.href}>
                   <FiExternalLink />
                 </Link>
               )}
             </HStack>
 
-            <Heading as="h5" fontSize="lg">
+            <Heading as="h5" fontSize="md" fontWeight="light">
               {project.subtitle}
             </Heading>
 
-            <Text fontSize={{ base: 'md', md: 'xl' }}>{project.description}</Text>
+            <Text fontSize={{ base: 'md', md: 'xl' }} fontWeight="bold" letterSpacing="wide">
+              {project.description}
+            </Text>
 
             <List items={project.technologies} />
           </MotionVStack>
@@ -85,7 +92,7 @@ const Projects: NextPage = () => {
                 alt={project.title}
                 objectFit="cover"
                 src={project.img}
-                width={isLargerThan768 ? 400 : 300}
+                width={isLargerThan768 ? 600 : 300}
               />
             </MotionBox>
           )}

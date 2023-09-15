@@ -30,6 +30,7 @@ import {
   SiDocker,
   SiPostgresql,
 } from 'react-icons/si'
+import { FiBarChart } from 'react-icons/fi'
 
 import { IContent, IItem, ITimelineItem } from './types'
 
@@ -164,6 +165,83 @@ export const works: Array<ITimelineItem> = [
 
 export const projects: Array<IContent> = [
   {
+    img: '/protego-mockup.png',
+    title: 'Web Platform',
+    badge: 'Web Application',
+    subtitle: 'Company: Protego Solutions',
+    description:
+      'Web application to centralize relevant information from companies in order to automate chargeback processes. Software Engineer in charge of bringing the MVP to production. It has the Dashboard and Reports sections, where it is implemented with tables, filters, pagination, loaders and charts.',
+    technologies: [
+      {
+        icon: SiFigma,
+        label: 'Figma',
+      },
+      {
+        icon: SiStorybook,
+        label: 'Storybook',
+      },
+      {
+        icon: SiNextdotjs,
+        label: 'Next.js',
+      },
+      {
+        icon: SiTypescript,
+        label: 'TypeScript',
+      },
+      {
+        icon: SiChakraui,
+        label: 'Chakra UI',
+      },
+      {
+        icon: SiReacttable,
+        label: 'React Query',
+      },
+      {
+        icon: SiReacttable,
+        label: 'React Table',
+      },
+      {
+        icon: FiBarChart,
+        label: 'D3.js',
+      },
+    ],
+  },
+  {
+    href: 'https://rita.udistrital.edu.co/gps/',
+    title: 'GNSS Geodetic Station',
+    img: '/gnss-mockup.png',
+    badge: 'Website',
+    subtitle: 'Company: District University',
+    description:
+      'Redesign and development of the website of the GNSS Geodetic Station of the District University implementing the SQL queries and templates in Django along with Responsive Design and developing an Scrapper to obtain updated data from differents websites',
+    technologies: [
+      {
+        icon: SiHtml5,
+        label: 'HTML',
+      },
+      {
+        icon: SiCss3,
+        label: 'CSS',
+      },
+      {
+        icon: SiJavascript,
+        label: 'Javascript',
+      },
+      {
+        icon: SiBootstrap,
+        label: 'Bootstrap',
+      },
+      {
+        icon: SiPython,
+        label: 'Python',
+      },
+      {
+        icon: SiDjango,
+        label: 'Django',
+      },
+    ],
+  },
+  {
     href: 'https://marvel-store-nasterb.vercel.app/',
     github: 'https://github.com/NathaEEUD/marvel-store',
     img: '/marvel-mockup.png',
@@ -227,45 +305,6 @@ export const projects: Array<IContent> = [
       {
         icon: SiSocketdotio,
         label: 'Socket.io',
-      },
-    ],
-  },
-  {
-    href: 'https://www.protegosolutions.io/',
-    img: '/protego-mockup.png',
-    title: 'Backoffice',
-    badge: 'Web Application',
-    subtitle: 'Company: Protego Solutions',
-    description:
-      'Web application to centralize relevant information from companies in order to automate chargeback processes. It has the Dashboard and Reports sections, where it is implemented with tables, filters, pagination, loaders and graphics.',
-    technologies: [
-      {
-        icon: SiFigma,
-        label: 'Figma',
-      },
-      {
-        icon: SiStorybook,
-        label: 'Storybook',
-      },
-      {
-        icon: SiNextdotjs,
-        label: 'Next.js',
-      },
-      {
-        icon: SiTypescript,
-        label: 'TypeScript',
-      },
-      {
-        icon: SiChakraui,
-        label: 'Chakra UI',
-      },
-      {
-        icon: SiReacttable,
-        label: 'React Query',
-      },
-      {
-        icon: SiReacttable,
-        label: 'React Table',
       },
     ],
   },
@@ -404,33 +443,6 @@ export const projects: Array<IContent> = [
       {
         icon: SiSocketdotio,
         label: 'Socket.io',
-      },
-    ],
-  },
-  {
-    href: 'https://rita.udistrital.edu.co/gps/',
-    title: 'GNSS Geodetic Station',
-    img: '/gnss-mockup.png',
-    badge: 'Website',
-    subtitle: 'Company: District University',
-    description:
-      'Redesign and development of the website of the GNSS Geodetic Station of the District University implementing Responsive Design',
-    technologies: [
-      {
-        icon: SiHtml5,
-        label: 'HTML',
-      },
-      {
-        icon: SiCss3,
-        label: 'CSS',
-      },
-      {
-        icon: SiJavascript,
-        label: 'Javascript',
-      },
-      {
-        icon: SiBootstrap,
-        label: 'Bootstrap',
       },
     ],
   },
