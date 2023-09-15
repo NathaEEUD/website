@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 
-import { Avatar, Box, Spacer, Stack, Text, chakra, shouldForwardProp } from '@chakra-ui/react'
-import { isValidMotionProp, motion, useViewportScroll } from 'framer-motion'
+import { Avatar, Box, Text, chakra, shouldForwardProp } from '@chakra-ui/react'
+import { isValidMotionProp, motion } from 'framer-motion'
 import React from 'react'
 
 import { Heading, Lottie } from '@atoms'
@@ -20,16 +20,6 @@ const MotionText = chakra(motion.p, {
 })
 
 const Home: NextPage = () => {
-  const { scrollYProgress } = useViewportScroll()
-  const [hookedYPosition, setHookedYPosition] = React.useState()
-
-  console.log('hookedYPosition ::: ', hookedYPosition)
-
-  React.useEffect(() => {
-    // hook into the onChange, store the current value as state
-    scrollYProgress.onChange(v => setHookedYPosition(v))
-  }, [scrollYProgress])
-
   return (
     <>
       <Section>
