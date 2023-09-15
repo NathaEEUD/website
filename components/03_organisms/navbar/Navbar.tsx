@@ -58,7 +58,13 @@ export const Navbar: React.FC<Props> = props => {
 
             <HStack display={{ base: 'none', md: 'flex' }} spacing={5}>
               {navItems.map(navItem => (
-                <NavItem key={navItem.href} href={navItem.href} label={navItem.label} path={path} />
+                <NavItem
+                  key={navItem.href}
+                  fontSize="md"
+                  href={navItem.href}
+                  label={navItem.label}
+                  path={path}
+                />
               ))}
             </HStack>
           </HStack>
